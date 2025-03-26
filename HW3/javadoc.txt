@@ -1,0 +1,139 @@
+Title: HW3AutomatedTests Class. 
+
+Description: A Java demonstration for semi-automated tests on team project 2's code 
+Version:1.00 2025-03-25 5 automated test cases based to fulfill HW3 CSE360Author:Kaden Capps
+
+
+void application.HW3AutomatedTests.testAddReplyToThread (
+int testCase, 
+
+int replyId, 
+
+int threadId, 
+
+String text, 
+
+String author, 
+
+boolean expectedPass
+)
+
+Testing to add a reply to a thread
+
+Parameters:
+	testCase The test case number
+	replyId The ID of the reply
+	threadId The ID of the thread which the reply is being added
+	text The text field of the reply
+	auth0r Who makes the reply
+	expectedPass Tells if test is expected to pass.
+
+
+void application.HW3AutomatedTests.testCreateEmptyThread (
+int testCase, 
+
+int threadId, 
+
+String title, 
+
+String author, 
+
+boolean expectedPass
+)
+
+Test to create a standalone thread
+
+Parameters:
+	testCase The test case number
+	threadId The id of the thread thats being made
+	title The title of the thread
+	author The creator of the thread
+	expectedPass Tells if the test is expected to pass
+
+
+void application.HW3AutomatedTests.testMaxLengthCredentials (
+
+int testCase, 
+
+String username, 
+
+String password, 
+
+String roles, 
+
+boolean expectedPass
+)
+
+Tests user creation with largest possible length username and password
+
+Parameters:
+	testCase The test case number
+	username The username to be tested
+	password The password to be tested
+	roles The roles assigned to the user
+	expectedPass tells if the test is expected to pass
+
+
+void application.HW3AutomatedTests.testMaxLengthCredentials (
+
+int testCase, 
+
+String username, 
+
+String password, 
+
+String roles, 
+
+boolean expectedPass
+)
+
+Tests user creation with largest possible length username and password
+
+Parameters:
+	testCase The test case number
+	username The username to be tested
+	password The password to be tested
+	roles The roles assigned to the user	
+	expectedPass tells if the test is expected to pass
+
+
+void application.HW3AutomatedTests.performUpdateThread (
+
+int testCase, 
+
+int threadId, 
+
+String author, 
+
+String originalText, 
+
+String editor, 
+
+String newContent, 
+
+boolean expectedPass
+)
+
+Tests updating a thread from an user who is not the author
+
+Parameters:
+	testCase The test case number
+	threadId The id of the thread tring to update updated
+	author The author of the thread
+	originalText The original content of the thread
+	editor The user attempting to edit the thread
+	newContent The new content tested to update the thread with
+	expectedPass Tells whether the test is expected to pass
+
+
+void application.HW3AutomatedTests.evaluateTest (
+
+boolean isTestPassed, 
+
+boolean expectedPass
+)
+
+Test by comparison if a test has given the expected pass or fail 
+Parameters:
+	isTestPassed The boolean value that a test case has ended with
+	expectedPass Tells whether the test is expected to pass
